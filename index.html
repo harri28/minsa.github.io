@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  <!-- head: contiene información básica sobre el documento -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión Hospital de Historias Clínicas</title>
+    <link rel = "stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <!-- Pantalla de inicio de sesión -->
+    <div id="loginScreen" class="screen active">
+        <div class="wrapper">
+            <h1>Login</h1>
+            <!-- Logo del hospital -->
+            <div class="logo">
+                <img src="logo-minsa.png" alt="Logo Minsa Tarapoto" class="logo-mintpt">
+                <img src="logo.png" alt="Logo Minsa Peru" class="logo-minsa">
+            </div>
+
+            <!-- Contenedor de ingresar correo -->
+            <div class="input-box">
+                <input type="text" placeholder="Ingrese Correo">
+                <i class='bx bxs-user'></i>
+            </div>
+            <!-- Contenedor de ingresar contraseña -->
+            <div class="input-box">
+                <input type="password" placeholder="Contraseña">
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <!-- Botón para ir a la nueva pantalla -->
+            <button type="button" class="btn" onclick="showNewScreen()">Iniciar Sesión</button>
+        </div>
+    </div>
+
+    <!-- SEGUNDA PANTALLA -->
+    <div id="newScreen" class="screen">
+        <div class="dashboard">
+            <!-- Encabezado -->
+            <header class="header">
+                <div class="user-info">
+                    <span>Iniciaste Sesión como médico especialista:</span>
+                    <strong>Díaz Rivero Ivan Valentín</strong>
+                </div>
+                <div class="controls">
+                    <select class="role-selector">
+                        <option>Cambiar</option>
+                        <option>General</option>
+                        <option>Especialista</option>
+                    </select>
+                    <button class="btn">Cerrar</button>
+                </div>
+            </header>
+        
+            <!-- Barra lateral -->
+            <aside class="sidebar">
+                <img src="logo.png" alt="Hospital Tarapoto" class="logo-sidebar">
+                <nav class="menu">
+                    <a href="#" class="menu-item active">Historial > Historial</a>
+                    <a href="#" class="menu-item">Reportes</a>
+                    <a href="#" class="menu-item">Configuración</a>
+                </nav>
+            </aside>
+        
+            <!-- Contenido principal -->
+            <main class="main-content">
+                 Información del paciente -->
+                <section class="patient-info">
+                    <h2>PLAN DE ATENCIÓN INTEGRAL DE SALUD</h2>
+                    <div class="info">
+                        <div>
+                            <label>N° de Historia Clínica:</label>
+                            <span>12345</span>
+                        </div>
+
+        
+
+
+
+                        <div>
+                            <label>Apellidos:</label>
+                            <input type="text" id="Apellidos" name="Apellidos" value="Tinoco Rodas" style="padding: 10px; width: 70%;">
+                        </div>
+
+
+
+                        <div>
+                            <label>Nombres:</label>
+                            <input type="text" id="Nombres" name="Nombres" value="Harris Steifer" style="padding: 10px; width: 70%;">
+                        </div>
+                        <div>
+                            <label>DNI:</label>
+                            <input type="text" id="DNI" name="DNI" value="73463054" style="padding: 10px; width: 70%;">
+                        </div>
+                        <div>
+                            <label>F. de Nacimiento:</label>
+                            <input type="text" id="F. de Nacimiento:" name="F. de Nacimiento:" value="  /   /   /" style="padding: 10px; width: 70%;">
+                        </div>
+                    </div>
+                    <div class="guardar">
+                        <button class="btn btn-export">Exportar</button>
+                    </div><div class="exportar">
+                        <button class="btn btn-export">Guardar</button>
+                    </div>
+                </section>
+        
+                <!-- Tabla del plan de atención -->
+                <section class="plan-attention">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th rowspan="2">CÓDIGO HIS</th>
+                            </tr>
+                            <tr>
+                                <th>N°</th>
+                                <th>PRESTACIÓN DE SALUD</th>
+                                <th>DESCRIPCIÓN</th>
+                                <th>0 - 28d</th>
+                                <th>1m - 11m</th>
+                                <th>1 año</th>
+                                <th>2 años</th>
+                                <th>3 años</th>
+                                <th>4 años</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Atención Integral de Salud</td>
+                                <td>Valoración 1ra Consulta: Antecedentes - Tamizaje - Identificación de factores de riesgo</td>
+                                <td>CB002<br>Dx D<br>Lab = 1</td>
+                                <td>Fecha</td>
+                                <td>Fecha</td>
+                                <td>Fecha</td>
+                                <td>Fecha</td>
+                                <td>Fecha</td>
+                                <td>Fecha</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Atención del recién nacido</td>
+                                <td>Considerar si el niño ha sido atendido en EE.SS. del nivel y Hospitales</td>
+                                <td>Dx=D</td>
+                                <td>Fecha</td>
+                                <td>Fecha</td>
+                                <td>Fecha</td>
+                                <td>Fecha</td>
+                                <td>Fecha</td>
+                                <td>Fecha</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Tamizaje metabólico</td>
+                                <td>Hipotiroidismo congénito, hiperplasia suprarrenal, fenicetonuria y fibrosis quística</td>
+                                <td>80099<br>Muestra/<br>Z13B</td>
+                                <td>Fecha</td>
+                                <td>Fecha</td>
+                                <td>Fecha</td>
+                                <td>Fecha</td>
+                                <td>Fecha</td>
+                                <td>Fecha</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </main>
+        </div>
+        
+    </div>
+
+    <script>
+        // Función para mostrar la nueva pantalla y ocultar la de login
+        function showNewScreen() {
+            document.getElementById('loginScreen').classList.remove('active');
+            document.getElementById('newScreen').classList.add('active');
+        }
+
+        // Función para volver a la pantalla de login
+        function showLogin() {
+            document.getElementById('newScreen').classList.remove('active');
+            document.getElementById('loginScreen').classList.add('active');
+        }
+    </script>
+</body>
+</html>

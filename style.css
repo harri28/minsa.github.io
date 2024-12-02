@@ -1,0 +1,354 @@
+
+/* Cuerpo de login*/
+body 
+{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #d3e2f0, #d3d3d3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor para los logos */
+.logo 
+{
+    display: flex;
+    flex-direction: column; /* Cambia la dirección del contenido a vertical */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Espacio debajo del contenedor */
+}
+
+/* Logo Minsa Tarapoto (arriba) */
+.logo-mintpt 
+{
+    max-width: 300px; /* Ajusta el tamaño del logo superior */
+    margin-bottom: 10px; /* Espacio entre los dos logos */
+    opacity: 1; /* Asegura visibilidad completa */
+}
+
+/* Logo Minsa Peru (abajo) */
+.logo-minsa 
+{
+    max-width: 300px; /* Ajusta el tamaño del logo inferior */
+    opacity: 1; /* Asegura visibilidad completa */
+}
+
+.wrapper
+{
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Título */
+h1 
+{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #4f4b85;
+}
+
+/* Estilos de las cajas de entrada */
+.input-box 
+{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input 
+{
+    width: 100%;
+    padding: 10px 40px; /* Espacio para íconos */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.input-box input:focus 
+{
+    border-color: #5b82e8;
+    box-shadow: 0 0 5px rgba(91, 130, 232, 0.5);
+}
+
+/* Íconos dentro de las cajas */
+.input-box i 
+{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #666;
+}
+
+/* Recuerda contraseña y enlace */
+.recuerda-contraseña
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #666;
+}
+
+.recuerda-contraseña a 
+{
+    color: #5b82e8;
+    text-decoration: none;
+}
+
+.recuerda-contraseña a:hover 
+{
+    text-decoration: underline;
+}
+
+/* Botón de inicio de sesión */
+.btn 
+{
+    width: 100%;
+    padding: 10px 0;
+    background-color: #5b82e8;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover 
+{
+    background-color: #476bb5;
+}
+
+.screen {
+    display: none; /* Todas las pantallas están ocultas por defecto */
+}
+
+.screen.active {
+    display: block; /* Solo la pantalla activa será visible */
+}
+
+
+
+
+/* Estilo general */
+body
+{
+    font-family: Arial, sans-serif;
+    margin: 1;
+    padding: 1;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+
+
+/* Contenedor principal */
+.dashboard {
+    display: grid;
+    grid-template-columns: 25% 75%; /* 25% barra lateral, 75% contenido principal */
+    width: 100%;
+    max-width: 1200px;
+    height: 90vh;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Barra lateral */
+.sidebar {
+    background-color: #5b82e8;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.sidebar .logo-sidebar {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.menu {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.menu-item {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    background-color: transparent;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.menu-item.active,
+.menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Encabezado */
+.header {
+    grid-column: span 2; /* El encabezado se extiende sobre ambas columnas */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4f4f9;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    color: #333;
+}
+
+.header .controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.role-selector {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    background-color: #5b82e8;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background-color: #476bb5;
+}
+
+/* Contenido principal */
+.main-content {
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Información del paciente */
+.patient-info {
+    margin-bottom: 20px;
+}
+
+.patient-info h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.patient-info .info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.patient-info .info div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.patient-info .guardar
+{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.patient-info .exportar
+{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+.patient-info .guardar .btn 
+{
+    width: 120px; /* Tamaño consistente para botones */
+}
+.patient-info .exportar .btn 
+{
+    width: 120px; /* Tamaño consistente para botones */
+    background-color: #4CAF50; /* Verde para el botón "Exportar" */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+
+
+/* Tabla */
+.table-section table 
+{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.table-section th,
+.table-section td
+{
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.table-section th
+{
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+}
+
+.table-section tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table-section tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+
+
